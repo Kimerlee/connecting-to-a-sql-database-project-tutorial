@@ -88,3 +88,12 @@ with engine.connect() as connection:
 # 4) Use Pandas to read and display a table
 df = pd.read_sql("SELECT * FROM publishers;", engine)
 print(df)
+
+df = pd.read_sql("SELECT * FROM authors;", engine)
+print(df)
+
+df = pd.read_sql("SELECT first_name FROM authors;", engine)
+print(df)
+
+df = pd.read_sql("SELECT name FROM publishers;", engine)
+print(df)
